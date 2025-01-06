@@ -1,0 +1,14 @@
+import React from 'react'
+import Form from '../Form/Form'
+
+const Contact = () => {
+  return (
+    <>
+        <div>Contact</div>
+        <Form></Form>
+    </>
+    
+  )
+}
+
+export default Contact
