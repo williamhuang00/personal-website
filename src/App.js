@@ -11,16 +11,16 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 
 const users = [
-  { firstName: "John", id: 1 },
-  { firstName: "Emily", id: 2 },
-  { firstName: "Michael", id: 3 },
-  { firstName: "Sarah", id: 4 },
-  { firstName: "David", id: 5 },
-  { firstName: "Jessica", id: 6 },
-  { firstName: "Daniel", id: 7 },
-  { firstName: "Olivia", id: 8 },
-  { firstName: "Matthew", id: 9 },
-  { firstName: "Sophia", id: 10 }
+  { firstName: "John", id: 1, metadata: 'ab9283jrjasodfj2m' },
+  { firstName: "Emily", id: 2, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "Michael", id: 3, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "Sarah", id: 4, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "David", id: 5, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "Jessica", id: 6, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "Daniel", id: 7, metadata: '3923094kjasdf'  },
+  { firstName: "Olivia", id: 8, metadata: 'ab9283jrjasodfj2m'  },
+  { firstName: "Matthew", id: 9, metadata: 'ab9283jrjasodfj2m' },
+  { firstName: "Sophia", id: 10, metadata: 'ab9283jrjasodfj2m'  }
 ]
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
         placeholder='Type to search'
       ></input>
       <ul>
-        {filteredUsers.map(user => <li key={user.id}>{user.firstName}</li>) /* presentation of each object */} 
+        {filteredUsers.map(user => <li key={user.id}>{user.firstName + " " + user.metadata}</li>) /* presentation of each object */} 
       </ul>
       <Footer></Footer>
     </Router>
